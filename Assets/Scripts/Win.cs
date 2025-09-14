@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,9 +7,9 @@ public class Win : MonoBehaviour
 {
     public float winRadius = 5.5f;
     //Define Win Radius
-    public Vector3 winPos = new Vector3(-50.2f, 3.16f, 1.040987f);
+    public Vector3 winPosition = new Vector3(-50.2f, 3.16f, 1.040987f);
     // Start is called before the first frame update
-    public float winDis;
+    public float winDistance;
     void Start()
     {
         
@@ -20,9 +19,9 @@ public class Win : MonoBehaviour
     void Update()
     {
         Vector3 plCurrentPos = transform.position;
-        winDis = Vector3.Distance(winPos, plCurrentPos);
+        winDistance = Vector3.Distance(winPosition, plCurrentPos);
         //define win distance here.
-        if (winDis <= winRadius)
+        if (winDistance <= winRadius)
         {
             SceneManager.LoadScene(3);
         }
