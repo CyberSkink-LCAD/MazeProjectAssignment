@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Y : MonoBehaviour
 {
-    public float winRadius = 1f;
+    public float winRadius = 5.5f;
     //Define Win Radius
     public Vector3 winPos = new Vector3(-39.93584f, 0.41f, -41.27f);
     //Define win zone center position
@@ -34,7 +35,7 @@ public class Y : MonoBehaviour
             //define win distance here.
         if (winDis <= winRadius)
         {
-            Debug.Log("winner!");
+            SceneManager.LoadScene(2);
         }
     }
 }
