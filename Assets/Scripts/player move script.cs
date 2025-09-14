@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playermovescript : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class playermovescript : MonoBehaviour
         
     }
 
-    public float speed =20f;
+    public float speed = 20f;
 
     void Update()
     {

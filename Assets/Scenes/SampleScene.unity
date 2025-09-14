@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f335927d32e36d40bd352ad10036f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winRadius: 1
+  winRadius: 5.5
   winPos: {x: -39.93584, y: 0.41, z: -41.27}
   speed: 5
   winDis: 0
